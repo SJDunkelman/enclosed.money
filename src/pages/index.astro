@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import "../styles/global.css";
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="text-off-black bg-off-white dark:bg-off-black dark:text-off-white px-8 md:px-12 lg:px-32">
+		<section class="h-screen w-full lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
+			<h1 class="text-7xl pb-6 font-semibold">Ξnclosed Money</h1>
+			<div class="h-1/3 w-full bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+			<p>We let you put your tokens inside an NFT.<br/>
+			Think of it like a gift card on steroids.</p>
+			<p>Why?</p>
+			<p class="pb-2">Easy lending, improved security <i class="fa-light fa-circle-question text-lg hover:underline underline-offset-8 cursor-pointer"></i>, added privacy & much more…<br/>
+				For <strong>ANY</strong> token.</p>
+			<button class="border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1">
+				Wrap me up
+			</button>
+		</section>
+		<section class="h-full w-full lg:w-2/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
+			<h2 class="text-5xl italic font-bold">How does it work?</h2>
+			<p class="text-justify-centre">The same way that WETH wraps ETH, you send tokens to the smart contract which stores your tokens and returns an NFT as an IOU. </p>
+				<div class="h-48 w-full bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+				<p>When you want to withdraw, you just
+					send back the NFT and the tokens are returned.</p>
+				<p class="pt-2">Simple.</p>
+		</section>
+		<section class="w-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
+			<h2 class="text-5xl italic font-bold">Turbocharge your basic tokens</h2>
+			<div class="flex py-8">
+				<div class="flex flex-col justify-center space-y-2 w-2/3 text-left">
+					<h5 class="pb-4 text-3xl font-semibold">Easy Lending</h5>
+					<p>Enable locked mode to prevent transfer,
+						Even if your wallet is hacked.</p>
+					<p>Self-custody just got safer.</p>
+				</div>
+				<div class="h-48 w-72 ml-4 bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+			</div>
+			<div class="flex flex-col md:flex-row py-8 items-center">
+				<div class="h-48 w-72 mr-4 bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+				<div class="flex flex-col justify-center space-y-2 pt-4 md:pt-0 w-full md:w-2/3 text-center md:text-right">
+					<h5 class="pb-4 text-3xl font-semibold">Locked Down Security</h5>
+					<p>Enable locked mode to prevent transfer,
+						Even if your wallet is hacked.</p>
+					<p>Self-custody just got safer.</p>
+				</div>
+			</div>
+			<div class="flex py-8">
+				<div class="flex flex-col justify-center space-y-2 w-2/3 text-left">
+					<h5 class="pb-4 text-3xl font-semibold">Privacy Stealth Mode</h5>
+					<p>Enable locked mode to prevent transfer,
+						Even if your wallet is hacked.</p>
+					<p>Self-custody just got safer.</p>
+				</div>
+				<div class="h-48 w-72 bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+			</div>
+		</section>
+		<section class="w-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
+			<p class="text-3xl">+<br/>
+			Access to the entire NFT ecosystem</p>
+		</section>
+	</main>
+</Layout>
