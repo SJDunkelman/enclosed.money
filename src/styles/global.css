@@ -7,3 +7,35 @@
     text-align: justify;
     text-align-last: center;
 }
+
+
+/* Animation that orbits a centre point */
+.orbit-around {
+    /* Position must be set (absolute) which the object will orbit as a mid-point */
+
+    -webkit-animation: objOrbit 6s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: objOrbit 6s linear infinite; /* Firefox 5-15 */
+      -o-animation: objOrbit 6s linear infinite; /* Opera 12+ */
+         animation: objOrbit 6s linear infinite; /* Chrome, Firefox 16+, 
+                                                   IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes objOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes objOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes objOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes objOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
