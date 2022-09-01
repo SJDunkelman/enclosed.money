@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93px" height="107px" viewBox="0 0 93 107" version="1.1">
+    <title>Icon / Interoperability@1x</title>
+    <defs>
+        <polyline id="path-1" points="22.9493 14.642 19.4133 11.107 22.9493 7.571 19.4133 4.036 22.9493 0.5"/>
+        <filter x="-1050.5%" y="-267.7%" width="2200.9%" height="610.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <polyline id="path-3" points="19.4131 11.1068 15.8781 7.5708 19.4131 4.0358"/>
+        <filter x="-1018.4%" y="-509.1%" width="2036.8%" height="1018.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <polyline id="path-5" points="23.9053 43.8822 27.4403 47.4182 23.9053 50.9532"/>
+        <filter x="-1018.4%" y="-509.1%" width="2036.8%" height="1018.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <path d="M22.9483,7.5765 C27.6103,7.8845 32.1843,9.8195 35.7473,13.3825 C41.0383,18.6735 42.7403,26.1945 40.8513,32.9205" id="path-7"/>
+        <filter x="-198.4%" y="-144.2%" width="494.1%" height="390.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <polyline id="path-9" points="20.3692 40.3466 23.9052 43.8826 20.3692 47.4176 23.9052 50.9536 20.3692 54.4886"/>
+        <filter x="-1050.5%" y="-242.6%" width="2200.9%" height="610.3%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <path d="M20.3702,47.4125 C15.7082,47.1045 11.1342,45.1695 7.5712,41.6065 C2.4352,36.4715 0.6822,29.2335 2.3092,22.6625" id="path-11"/>
+        <filter x="-195.7%" y="-150.0%" width="494.2%" height="397.7%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <polygon id="path-13" points="7.5713 20.3695 0.5003 13.2985 7.5053 6.2935 14.5763 13.3645"/>
+        <filter x="-260.8%" y="-260.8%" width="621.6%" height="621.6%" filterUnits="objectBoundingBox" id="filter-14">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <polygon id="path-15" points="35.7559 48.5546 28.7509 41.5496 35.7559 34.5446 42.7609 41.5496"/>
+        <filter x="-262.0%" y="-262.0%" width="624.0%" height="624.0%" filterUnits="objectBoundingBox" id="filter-16">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g id="Marketing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Landingpage" transform="translate(-675.000000, -1844.000000)">
+            <g id="Icon-/-Interoperability" transform="translate(700.000000, 1870.000000)">
+                <g id="Stroke-1">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-1"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-1"/>
+                </g>
+                <g id="Stroke-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-3"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-3"/>
+                </g>
+                <g id="Stroke-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-5"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-5"/>
+                </g>
+                <g id="Stroke-5">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-7"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-7"/>
+                </g>
+                <g id="Stroke-7">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-9"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-9"/>
+                </g>
+                <g id="Stroke-9">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-11"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-11"/>
+                </g>
+                <g id="Stroke-11">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-13"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-13"/>
+                </g>
+                <g id="Stroke-13">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"/>
+                    <use stroke="#F2F2F9" stroke-width="1" fill-opacity="0.1" fill="#F2F2F9" fill-rule="evenodd" xlink:href="#path-15"/>
+                    <use stroke="#FFFFFF" stroke-width="0.5" xlink:href="#path-15"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -16,6 +16,6 @@ import HeroAnimationData from "../data/hero-envelope.json";
     }, [])
 
     return (
-        <div className="h-60 w-full" ref={animationContainer}></div>
+        <div className="h-48 w-full" ref={animationContainer}></div>
     )
 }

@@ -19,7 +19,7 @@ import LetterImg from "../images/letter-closed.svg";
     }, [])
 
     return (
-        <div class="h-60 w-full flex items-center justify-between relative">
+        <div className="h-60 w-full flex items-center justify-between relative">
             <img src={TokenImg} alt="Token" className="move-left h-16 w-16" />
             <img src={LetterImg} alt="Token" className="move-right h-20 w-20" />
             <div className="h-60 w-48 absolute right-0 top-1/2 -translate-y-1/2" ref={animationContainer}></div>

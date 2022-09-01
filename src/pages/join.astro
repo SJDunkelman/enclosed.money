@@ -1,18 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
+
+import WinterProfile from "../images/winter.png";
+import SimonProfile from "../images/simon.png";
 ---
 
 <Layout title="Ξnclosed Money">
-	<main class="text-off-black bg-off-white dark:bg-off-black dark:text-off-white px-8 md:px-12 lg:px-32">
-		<section class="h-screen w-full lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-xl text-center">
-			<h1 class="text-7xl pb-6 font-semibold">Congratulations 🎉</h1>
-            <p>You&apos;re early.<br/>
+	<main class="bg-gradient-to-tr from-gray-700 via-gray-900 to-black text-off-white px-8 md:px-12 lg:px-32">
+		<section class="h-full min-h-screen w-full lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-lg text-center">
+			<h1 class="text-4xl md:text-7xl pb-6 font-semibold">Congratulations 🎉</h1>
+            <p class="text-xl font-extralight"><span class="font-medium">You&apos;re early.</span><br/>
             Sign up below and we&apos;ll let you know as soon as we launch.</p>
             <form id="contact-form" class="flex flex-col items-center space-y-4 w-full">
-                <input type="email" name="user_email" class="text-black px-2 py-1 w-2/5 text-center" required placeholder="early@wagmi.com">
+                <input type="email" name="user_email" class="text-black px-2 py-1 w-2/5 text-center btn-gradient-border active:bg-white active:bg-opacity-20" required placeholder="early@wagmi.com">
                 <input type="submit" value="Notify Me" class=" border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1 w-min">
             </form>
+            <div class="border-t-[1px] w-3/4 opacity-25 bg-white rounded-2xl" />
+            <div class="flex flex-col font-extralight">
+                <h1 class="text-4xl pb-6 font-semibold">Don&apos;t want to wait?</h1>
+                <p>Join us in building <span class="text-gradient font-medium">Enclosed Money DAO</span></p>
+                <p class="py-2">Current Team</p>
+                <div class="flex flex-col items-center space-y-6">
+                    <div class="flex items-center w-full text-left space-x-2">
+                        <img src={WinterProfile} alt="W1nter.eth profile" class="hex-profile h-16">
+                        <div class="flex flex-col whitespace-nowrap">
+                            <a href="https://twitter.com/w1nt3r_eth" class="hover:text-[#016EDA]"><p class="text-xl">W1nter.eth<i class="fa-brands fa-twitter ml-2"></i></p></a>
+                            <p class="text-sm">Smart Contract Developer</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full text-left space-x-2">
+                        <img src={SimonProfile} alt="W1nter.eth profile" class="hex-profile h-16">
+                        <div class="flex flex-col whitespace-nowrap">
+                            <a href="https://twitter.com/w1nt3r_eth" class="hover:text-[#016EDA]"><p class="text-xl">Simon<i class="fa-brands fa-twitter ml-2"></i></p></a>
+                            <p class="text-sm">Product Builder</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="py-6">Apply by leaving a comment under <a href="" class="underline hover:text-[#016EDA]">this thread</a></p>
+            </div>
         </section>
     </main>
 </Layout>

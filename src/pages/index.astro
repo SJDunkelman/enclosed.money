@@ -4,83 +4,98 @@ import Card from '../components/Card.astro';
 import HeroAnimation from "../components/HeroAnimation.jsx";
 import ContractAnimation from "../components/ContractAnimation.jsx";
 import PhoneAnimation from "../components/PhoneAnimation.jsx";
+import BenefitCard from "../components/BenefitCard.jsx";
 import "../styles/global.css";
 
 import CashImg from "../images/cash.svg";
-import SendImg from "../images/send.svg";
-import SafetyImg from "../images/safety.svg";
+import SendImg from "../images/lend.svg";
+import LockImg from "../images/lock.svg";
+
+import BendIcon from "../images/bend.png";
+import OpenSeaIcon from "../images/opensea.svg";
+import NexoIcon from "../images/nexo.svg";
+import ArcadeIcon from "../images/arcade.png";
+import DropsIcon from "../images/drops.png";
+
+import LetterIcon from "../images/letter-closed.svg";
 ---
 
 <Layout title="Ξnclosed Money">
-	<main class="text-off-black bg-off-white dark:bg-off-black dark:text-off-white px-8 md:px-12 lg:px-32">
-		<section class="h-screen w-full lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
-			<h1 class="text-7xl pb-6 font-semibold">Ξnclosed Money</h1>
+	<main class="bg-gradient-to-tr from-gray-700 via-gray-900 to-black text-off-white px-8 md:px-12 lg:px-32">
+		<section class="h-screen w-full lg:w-3/5 mx-auto pt-16 flex flex-col items-center space-y-4 text-2xl text-center font-light">
+			<h1 class="text-7xl pb-6 font-bold text-glow">Ξnclosed Money</h1>
 			<HeroAnimation client:load />
-			<p>We let you put your tokens inside an NFT.<br/>
+			<p class="font-medium">We let you put your <span class="text-gradient">tokens inside an NFT.</span><br/>
 			Think of it like a gift card on steroids.</p>
 			<p class="hover:underline underline-offset-8 cursor-pointer">Why?</p>
 			<p class="pb-2">Easy lending, improved security, added privacy & much more…<br/>
-				For <strong>ANY</strong> token.</p>
-			<a href="/join">
-				<button class="border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1">
+				For <span class="text-glow font-semibold"><strong class="font-bold">ANY</strong> token.</span></p>
+			
+				<button class="btn btn-gradient-border btn-glow rounded-lg px-2 py-1">
+					<a href="/join">
 					Wrap me up
+				</a>
 				</button>
-			</a>
+			
 		</section>
-		<section class="h-full w-full lg:w-2/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
+		<section class="h-full w-full lg:w-2/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center font-extralight">
 			<h2 class="text-5xl italic font-bold">How does it work?</h2>
 			<p class="text-justify-centre">The same way that WETH wraps ETH, you send tokens to the smart contract which stores your tokens and returns an NFT as an IOU. </p>
 				<ContractAnimation client:visible />
 				<p>When you want to withdraw, you just
 					send back the NFT and the tokens are returned</p>
-				<p class="pt-2">Simple.</p>
+				<p class="pt-2 font-medium text-gradient">Simple.</p>
 		</section>
-		<section class="w-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
-			<h2 class="text-5xl italic font-bold">Turbocharge your basic tokens</h2>
-			<div class="flex py-8">
-				<div class="flex flex-col justify-center space-y-2 w-2/3 text-left">
-					<h5 class="pb-4 text-3xl font-semibold">Easy Lending</h5>
-					<p>Lend out your exotic tokens using NFT lending platforms.</p>
-					<p>Your bags are already feeling lighter.</p>
-				</div>
-				<img src={SendImg} alt="Cash" class="h-40 w-auto ml-4"/>
-			</div>
-			<div class="flex flex-col md:flex-row py-8 items-center">
-				<img src={SafetyImg} alt="Cash" class="h-40 w-auto mr-4"/>
-				<div class="flex flex-col justify-center space-y-2 pt-4 md:pt-0 w-full md:w-2/3 text-center md:text-right">
-					<h5 class="pb-4 text-3xl font-semibold">Locked Down Security</h5>
-					<p>Enable locked mode to prevent transfers,
-						even if your wallet is hacked.</p>
-					<p>Self-custody just got safer.</p>
-				</div>
-			</div>
-			<div class="flex py-8">
-				<div class="flex flex-col justify-center space-y-2 w-2/3 text-left">
-					<h5 class="pb-4 text-3xl font-semibold">Privacy On-Chain</h5>
-					<p>Use <a href="https://ethresear.ch/t/erc721-extension-for-zk-snarks/13237/2" target="_blank" class="hover:underline underline-offset-4">stealth addresses</a> to send tokens without anyone else knowing.</p>
-					<p>Same wallet, more discrete.</p>
-				</div>
-				<img src={CashImg} alt="Cash" class="h-48 w-auto"/>
-			</div>
+		<section class="w-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center font-light">
+			<h2 class="text-5xl italic font-bold pb-8">Turbocharge your basic tokens</h2>
+			<BenefitCard title="Easy Lending" 
+			desc="Lend out your exotic tokens using NFT lending platforms." 
+			benefit="Your bags are already feeling lighter."
+			img={SendImg}
+			leftSide 
+			client:visible/>
+			<BenefitCard title="Locked Down Security" 
+			desc="Enable locked mode to prevent transfers, even if your wallet is hacked." 
+			benefit="Self-custody just got safer."
+			img={LockImg}
+			client:visible/>
+			<BenefitCard title="Privacy On-Chain" 
+			desc="Use stealth addresses to send tokens without anyone else knowing." 
+			benefit="Your bags are already feeling lighter."
+			img={CashImg}
+			leftSide
+			client:visible/>
 		</section>
 		<section class="w-full h-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
-			<p class="text-3xl">+<br/>
+			<p class="text-3xl font-semibold">+<br/>
 			Access to the entire NFT ecosystem</p>
-			<div class="w-128 h-96 relative">
-
-
-				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -1s;" />
-				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -2s;"/>
-				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -3s;"/>
-				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -4s;"/>
-				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -5s;"/>
-				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -6s;"/>
+			<div class="flex items-center justify-center w-full">
+				<div class="w-96 h-96 relative mr-20">
+					<img src={LetterIcon} alt="" class="absolute left-1/2 top-1/2 -translate-x-1 h-24 w-24">
+					<div class="orbit-around top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-16 h-16 z-10" style="animation-delay: -2s;">
+						<img src={OpenSeaIcon} alt="BendDao" class="w-16 h-16"  />
+					</div>
+					<div class="orbit-around top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-16 h-16 z-10" style="animation-delay: -4s;">
+						<img src={DropsIcon} alt="BendDao" class="w-16 h-16"  />
+					</div>
+					<div class="orbit-around top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-16 h-16 z-10" style="animation-delay: -6s;">
+						<img src={ArcadeIcon} alt="BendDao" class="w-16 h-16"  />
+					</div>
+					<div class="orbit-around top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-16 h-16 z-10" style="animation-delay: -8s;">
+						<img src={NexoIcon} alt="BendDao" class="w-16 h-16"  />
+					</div>
+					<div class="orbit-around top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute w-16 h-16 z-10" style="animation-delay: -10s;">
+						<img src={BendIcon} alt="BendDao" class="w-16 h-16"  />
+					</div>
+				</div>
 			</div>
 			<div class="pt-8 pb-16 flex flex-col space-y-12 items-center text-center">
 				<h2 class="text-5xl italic font-bold">Let&apos;s wrap this up</h2>
-				<button class="border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1 h-min w-min whitespace-nowrap">
-					Wrap my tokens
-				</button>
+				<a href="/join">
+					<button class="btn btn-gradient-border btn-glow rounded-lg px-2 py-1">
+						Wrap my tokens
+					</button>
+				</a>
 			</div>
 		</section>
 	</main>
