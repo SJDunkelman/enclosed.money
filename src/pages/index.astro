@@ -1,29 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import HeroAnimation from "../components/HeroAnimation.jsx";
+import ContractAnimation from "../components/ContractAnimation.jsx";
+import PhoneAnimation from "../components/PhoneAnimation.jsx";
 import "../styles/global.css";
+
+import CashImg from "../images/cash.svg";
+import SendImg from "../images/send.svg";
+import SafetyImg from "../images/safety.svg";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Ξnclosed Money">
 	<main class="text-off-black bg-off-white dark:bg-off-black dark:text-off-white px-8 md:px-12 lg:px-32">
 		<section class="h-screen w-full lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
 			<h1 class="text-7xl pb-6 font-semibold">Ξnclosed Money</h1>
-			<div class="h-1/3 w-full bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+			<HeroAnimation client:load />
 			<p>We let you put your tokens inside an NFT.<br/>
 			Think of it like a gift card on steroids.</p>
-			<p>Why?</p>
-			<p class="pb-2">Easy lending, improved security <i class="fa-light fa-circle-question text-lg hover:underline underline-offset-8 cursor-pointer"></i>, added privacy & much more…<br/>
+			<p class="hover:underline underline-offset-8 cursor-pointer">Why?</p>
+			<p class="pb-2">Easy lending, improved security, added privacy & much more…<br/>
 				For <strong>ANY</strong> token.</p>
-			<button class="border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1">
-				Wrap me up
-			</button>
+			<a href="/join">
+				<button class="border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1">
+					Wrap me up
+				</button>
+			</a>
 		</section>
 		<section class="h-full w-full lg:w-2/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
 			<h2 class="text-5xl italic font-bold">How does it work?</h2>
 			<p class="text-justify-centre">The same way that WETH wraps ETH, you send tokens to the smart contract which stores your tokens and returns an NFT as an IOU. </p>
-				<div class="h-48 w-full bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+				<ContractAnimation client:visible />
 				<p>When you want to withdraw, you just
-					send back the NFT and the tokens are returned.</p>
+					send back the NFT and the tokens are returned</p>
 				<p class="pt-2">Simple.</p>
 		</section>
 		<section class="w-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
@@ -31,29 +40,27 @@ import "../styles/global.css";
 			<div class="flex py-8">
 				<div class="flex flex-col justify-center space-y-2 w-2/3 text-left">
 					<h5 class="pb-4 text-3xl font-semibold">Easy Lending</h5>
-					<p>Enable locked mode to prevent transfer,
-						Even if your wallet is hacked.</p>
-					<p>Self-custody just got safer.</p>
+					<p>Lend out your exotic tokens using NFT lending platforms.</p>
+					<p>Your bags are already feeling lighter.</p>
 				</div>
-				<div class="h-48 w-72 ml-4 bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+				<img src={SendImg} alt="Cash" class="h-40 w-auto ml-4"/>
 			</div>
 			<div class="flex flex-col md:flex-row py-8 items-center">
-				<div class="h-48 w-72 mr-4 bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+				<img src={SafetyImg} alt="Cash" class="h-40 w-auto mr-4"/>
 				<div class="flex flex-col justify-center space-y-2 pt-4 md:pt-0 w-full md:w-2/3 text-center md:text-right">
 					<h5 class="pb-4 text-3xl font-semibold">Locked Down Security</h5>
-					<p>Enable locked mode to prevent transfer,
-						Even if your wallet is hacked.</p>
+					<p>Enable locked mode to prevent transfers,
+						even if your wallet is hacked.</p>
 					<p>Self-custody just got safer.</p>
 				</div>
 			</div>
 			<div class="flex py-8">
 				<div class="flex flex-col justify-center space-y-2 w-2/3 text-left">
-					<h5 class="pb-4 text-3xl font-semibold">Privacy Stealth Mode</h5>
-					<p>Enable locked mode to prevent transfer,
-						Even if your wallet is hacked.</p>
-					<p>Self-custody just got safer.</p>
+					<h5 class="pb-4 text-3xl font-semibold">Privacy On-Chain</h5>
+					<p>Use <a href="https://ethresear.ch/t/erc721-extension-for-zk-snarks/13237/2" target="_blank" class="hover:underline underline-offset-4">stealth addresses</a> to send tokens without anyone else knowing.</p>
+					<p>Same wallet, more discrete.</p>
 				</div>
-				<div class="h-48 w-72 bg-black dark:bg-white " /> <!-- Placeholder for lottie animation -->
+				<img src={CashImg} alt="Cash" class="h-48 w-auto"/>
 			</div>
 		</section>
 		<section class="w-full h-full md:w-4/5 lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-2xl text-center">
@@ -69,10 +76,10 @@ import "../styles/global.css";
 				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -5s;"/>
 				<div class="orbit-around absolute top-1/2 left-1 relative/2 w-4 h-4 dark:bg-white bg-black" style="animation-delay: -6s;"/>
 			</div>
-			<div class="py-8 flex flex-col space-y-6 items-center text-center">
-				<h2 class="text-5xl italic font-bold">Let’s wrap this up</h2>
+			<div class="pt-8 pb-16 flex flex-col space-y-12 items-center text-center">
+				<h2 class="text-5xl italic font-bold">Let&apos;s wrap this up</h2>
 				<button class="border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1 h-min w-min whitespace-nowrap">
-					Wrap me up
+					Wrap my tokens
 				</button>
 			</div>
 		</section>

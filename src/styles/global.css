@@ -39,3 +39,73 @@
     from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
+
+
+.move-left {
+    position: absolute;
+    animation-delay: 3s;
+    -webkit-animation: animLeft 3s ease-in-out infinite; /* Chrome, Safari 5 */
+    -moz-animation: animLeft 3s ease-in-out infinite; /* Firefox 5-15 */
+      -o-animation: animLeft 3s ease-in-out infinite; /* Opera 12+ */
+         animation: animLeft 3s ease-in-out infinite; /* Chrome, Firefox 16+, 
+                                                   IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes animLeft {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 55%;
+      opacity: 100%;
+    }
+    51% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 0;
+      }
+  }
+
+/* @-moz-keyframes animLeft {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes animLeft {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes animLeft {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+} */
+
+
+.move-right {
+    position: absolute;
+    -webkit-animation: animRight 3s ease-in-out infinite; /* Chrome, Safari 5 */
+    -moz-animation: animRight 3s ease-in-out infinite; /* Firefox 5-15 */
+      -o-animation: animRight 3s ease-in-out infinite; /* Opera 12+ */
+         animation: animRight 3s ease-in-out infinite; /* Chrome, Firefox 16+, 
+                                                   IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes animRight {
+    0% {
+        opacity: 0;
+      
+    }
+    50% {
+      
+      opacity: 0;
+    }
+    51% {
+        opacity: 100%;
+        right: 30%;
+      }
+    100% {
+        right: 85%;
+      }
+  }

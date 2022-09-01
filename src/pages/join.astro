@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout title="Ξnclosed Money">
+	<main class="text-off-black bg-off-white dark:bg-off-black dark:text-off-white px-8 md:px-12 lg:px-32">
+		<section class="h-screen w-full lg:w-3/5 mx-auto pt-10 flex flex-col items-center space-y-4 text-xl text-center">
+			<h1 class="text-7xl pb-6 font-semibold">Congratulations 🎉</h1>
+            <p>You&apos;re early.<br/>
+            Sign up below and we&apos;ll let you know as soon as we launch.</p>
+            <form id="contact-form" class="flex flex-col items-center space-y-4 w-full">
+                <input type="email" name="user_email" class="text-black px-2 py-1 w-2/5 text-center" required placeholder="early@wagmi.com">
+                <input type="submit" value="Notify Me" class=" border-light-black dark:border-ghost-white rounded-lg border-2 px-2 py-1 w-min">
+            </form>
+        </section>
+    </main>
+</Layout>
