@@ -18,7 +18,7 @@ export default function EmailSignup() {
 
   return (
     <form ref={form} onSubmit={sendEmail} class="flex flex-col items-center space-y-4 w-full">
-      <input type="email" name="user_email" class="text-black px-2 py-1 w-2/5 text-center btn-gradient-border active:bg-white active:bg-opacity-20" required placeholder="early@wagmi.com" />
+      <input type="email" name="user_email" class="text-black px-2 py-1 w-full md:w-2/5 text-center btn-gradient-border active:bg-white active:bg-opacity-20" required placeholder="early@wagmi.com" />
       {
         signedUp === true ?
         <p className="gradient-text">Thanks for signing up! We'll email you within 24 hours</p> :
